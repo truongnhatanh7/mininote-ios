@@ -13,9 +13,9 @@ struct FolderRow: View {
     var body: some View {
         NavigationLink(destination: NotesView(selectedFolder: folder)) {
             Text(folder!.name)
-        }
-            
+        }   
     }
+        
 }
 
 struct FolderRow_Previews: PreviewProvider {

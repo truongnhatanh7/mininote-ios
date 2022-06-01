@@ -15,6 +15,10 @@
 		55AB9CD82847557D001DEF61 /* FolderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB9CD72847557D001DEF61 /* FolderManager.swift */; };
 		55AB9CDA284755E5001DEF61 /* FolderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB9CD9284755E5001DEF61 /* FolderRow.swift */; };
 		55AB9CDC28475A41001DEF61 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB9CDB28475A41001DEF61 /* NotesView.swift */; };
+		55AB9CDE28475DDE001DEF61 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB9CDD28475DDE001DEF61 /* NoteRow.swift */; };
+		55AB9CE028475DEB001DEF61 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB9CDF28475DEB001DEF61 /* Note.swift */; };
+		55AB9CE2284764E9001DEF61 /* NoteElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB9CE1284764E9001DEF61 /* NoteElement.swift */; };
+		55AB9CE42847C1C1001DEF61 /* SelectedNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB9CE32847C1C1001DEF61 /* SelectedNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		55AB9CD72847557D001DEF61 /* FolderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderManager.swift; sourceTree = "<group>"; };
 		55AB9CD9284755E5001DEF61 /* FolderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderRow.swift; sourceTree = "<group>"; };
 		55AB9CDB28475A41001DEF61 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		55AB9CDD28475DDE001DEF61 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
+		55AB9CDF28475DEB001DEF61 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		55AB9CE1284764E9001DEF61 /* NoteElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteElement.swift; sourceTree = "<group>"; };
+		55AB9CE32847C1C1001DEF61 /* SelectedNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 			children = (
 				55AB9CD528475553001DEF61 /* Folder.swift */,
 				55AB9CD72847557D001DEF61 /* FolderManager.swift */,
+				55AB9CDF28475DEB001DEF61 /* Note.swift */,
+				55AB9CE1284764E9001DEF61 /* NoteElement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,6 +101,8 @@
 				55AB9CC7284750A4001DEF61 /* ContentView.swift */,
 				55AB9CD9284755E5001DEF61 /* FolderRow.swift */,
 				55AB9CDB28475A41001DEF61 /* NotesView.swift */,
+				55AB9CDD28475DDE001DEF61 /* NoteRow.swift */,
+				55AB9CE32847C1C1001DEF61 /* SelectedNoteView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,9 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				55AB9CC8284750A4001DEF61 /* ContentView.swift in Sources */,
+				55AB9CE42847C1C1001DEF61 /* SelectedNoteView.swift in Sources */,
+				55AB9CDE28475DDE001DEF61 /* NoteRow.swift in Sources */,
 				55AB9CD82847557D001DEF61 /* FolderManager.swift in Sources */,
+				55AB9CE028475DEB001DEF61 /* Note.swift in Sources */,
 				55AB9CDC28475A41001DEF61 /* NotesView.swift in Sources */,
 				55AB9CC6284750A4001DEF61 /* mininoteApp.swift in Sources */,
+				55AB9CE2284764E9001DEF61 /* NoteElement.swift in Sources */,
 				55AB9CD628475553001DEF61 /* Folder.swift in Sources */,
 				55AB9CDA284755E5001DEF61 /* FolderRow.swift in Sources */,
 			);
@@ -227,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -281,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

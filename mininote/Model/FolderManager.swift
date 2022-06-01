@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct FolderManager {
+    var folders = [Folder]()
+}

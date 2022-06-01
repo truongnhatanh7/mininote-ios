@@ -14,19 +14,25 @@ struct ContentView: View {
     var body: some View {
       NavigationView {
           VStack {
-                  
               List {
+
                  Section(header:
                     Text("On My iPhone")) {
                      ForEach(folders, id: \.self) { fr in
                          FolderRow(folder: fr)
                      }
                  }
+                    .toolbar {
+                        EditButton()
+                    }
               }
               .navigationBarTitle("Folders")
+
           }
 
+
       }
+      .tint(.yellow)
     }
 }
 
